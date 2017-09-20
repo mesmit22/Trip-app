@@ -29,7 +29,6 @@ namespace trip_app.Entities
 
         [Required]
         [Display(Name = "Zip Code")]
-        [MaxLength(5)]
         public int ZipCode { get; set; }
     }
 }

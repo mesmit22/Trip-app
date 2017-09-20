@@ -29,5 +29,7 @@ namespace trip_app.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<trip_app.Entities.Address> Addresses { get; set; }
     }
 }
