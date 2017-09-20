@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using trip_app.Entities;
 
 namespace trip_app.Models
 {
@@ -30,6 +31,8 @@ namespace trip_app.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<trip_app.Entities.Address> Addresses { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+
+        public DbSet<State> States { get; set; }
     }
 }
